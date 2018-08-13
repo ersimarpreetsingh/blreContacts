@@ -1,0 +1,57 @@
+page-contacts {
+  ion-header {
+    ion-navbar.toolbar,
+    ion-navbar.toolbar-md,
+    ion-navbar.toolbar-ios {
+      .toolbar-background,
+      .toolbar-background-ios,
+      .toolbar-background-md {
+        background-color: #4285f6;
+      }
+      .bar-buttons,
+      .bar-buttons-ios,
+      .bar-buttons-md {
+        color: white;
+      }
+      .toolbar-content,
+      .toolbar-content-ios,
+      .toolbar-content-md {
+        .title,
+        .title-ios,
+        .title-md {
+          .toolbar-title,
+          .toolbar-title-ios,
+          .toolbar-title-md {
+            color: white;
+            font: 500 20px Open Sans;
+          }
+        }
+      }
+    }
+  }
+  .after-arrow {
+    .fixed-content {
+      &:after {
+        position: absolute;
+        right: 66px;
+        bottom: 66px;
+        width: 125px;
+        height: 290px;
+        content: '';
+        background-image: url("../assets/imgs/curved-arrow.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+      }
+    }
+  }
+  .no-contact-content {
+    .no-contact-copy {
+      background-color: white;
+      font: 300 26px Open-Sans-light;
+      max-width: 275px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}

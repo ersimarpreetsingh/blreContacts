@@ -1,0 +1,46 @@
+page-login {
+  ion-content {
+    background: linear-gradient(to bottom, #ffffff 10%, #4285fa 65%);
+    .logo {
+      text-align: center;
+      padding: 1rem 0 1.5rem;
+      img {
+        width: 150px;
+      }
+    }
+    .login-copy {
+      text-align: center;
+      h3 {
+        font: 300 28px Open Sans;
+        color: #0c54a0;
+      }
+    }
+    .form {
+      margin-top: 80px;
+      ion-item.item,
+      ion-item.item-ios,
+      ion-item.item-md {
+        background-color: transparent;
+        padding: 0px;
+        color: #fff;
+        font: 300 18px Open sans;
+        .input.input-md,
+        .input.input-ios {
+          color: #fff;
+        }
+      }
+      .submit.item,
+      .submit.item-md,
+      .submit.item-ios {
+        margin-top: 25px;
+        height: 38px;
+        button {
+          background-color: #0c54a0;
+          height: 38px;
+          width: 110px;
+          font: 14px Open Sans;
+        }
+      }
+    }
+  }
+}
