@@ -1,34 +1,5 @@
 page-contacts {
-  ion-header {
-    ion-navbar.toolbar,
-    ion-navbar.toolbar-md,
-    ion-navbar.toolbar-ios {
-      .toolbar-background,
-      .toolbar-background-ios,
-      .toolbar-background-md {
-        background-color: #4285f6;
-      }
-      .bar-buttons,
-      .bar-buttons-ios,
-      .bar-buttons-md {
-        color: white;
-      }
-      .toolbar-content,
-      .toolbar-content-ios,
-      .toolbar-content-md {
-        .title,
-        .title-ios,
-        .title-md {
-          .toolbar-title,
-          .toolbar-title-ios,
-          .toolbar-title-md {
-            color: white;
-            font: 500 20px Open Sans;
-          }
-        }
-      }
-    }
-  }
+  @include header-style;
   .after-arrow {
     .fixed-content {
       &:after {

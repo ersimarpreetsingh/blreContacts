@@ -1,0 +1,26 @@
+page-import-contacts {
+  @include header-style;
+  .import-options {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    max-width: 285px;
+    text-align: center;
+    p {
+      color: map-get($colors, dark-text);
+      font: 600 18px Open-Sans-semibold;
+      &:first-child{
+          margin-top: 0;
+      }
+    }
+    .img-btn {
+      margin-top: 30px;
+      &.ol {
+        padding: 0 40px;
+      }
+    }
+    .option-text {
+      margin-top: 100px;
+    }
+  }
+}
