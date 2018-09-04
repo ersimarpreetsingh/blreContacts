@@ -1,3 +1,18 @@
 page-view-contact {
-
+    .after-arrow {
+        .fixed-content {
+          &:after {
+            position: absolute;
+            right: 66px;
+            bottom: 66px;
+            width: 125px;
+            height: 290px;
+            content: '';
+            background-image: url("../assets/imgs/curved-arrow.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+          }
+        }
+      }
 }

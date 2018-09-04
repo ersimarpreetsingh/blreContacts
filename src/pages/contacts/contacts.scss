@@ -25,4 +25,23 @@ page-contacts {
       text-align: center;
     }
   }
+
+  .numberCircle {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    background: #fff;
+    color: orange;
+    font-size: 16px;
+    text-align: center;
+    margin: 8px 8px 8px 8px;  
+  }
+
+  .item-height{
+    padding: 5px 5px 5px 5px;
+    .item-name{
+      font-size: 16px;
+      color: black;
+    }
+  }
 }
