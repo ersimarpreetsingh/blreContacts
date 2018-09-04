@@ -20,10 +20,60 @@
     </p>
   </div>
   <div>
-    <ion-item>
-        <ion-label><ion-icon ios="ios-camera" md="md-camera"></ion-icon></ion-label>
-      <input type="file"/>
+    <ion-item class="input-item">
+      <ion-label>
+        <ion-icon ios="ios-camera" md="md-camera"></ion-icon>
+      </ion-label>
+      <ion-input type="file" accept="image/x-png,image/gif,image/jpeg"></ion-input>
     </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label>
+        <ion-icon ios="ios-person" md="md-person"></ion-icon>
+      </ion-label>
+      <ion-input type="text" placeholder="Name"></ion-input>
+    </ion-item>
+    
+    <ion-item class="input-item">
+      <ion-label>
+        <ion-icon ios="ios-briefcase" md="md-briefcase"></ion-icon>
+      </ion-label>
+      <ion-input type="text" placeholder="Company"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label>
+      </ion-label>
+      <ion-input type="text" placeholder="Job Title" style="margin-left: 15px;"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label>
+        <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+      </ion-label>
+      <ion-input type="email" placeholder="Email"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label>
+        <ion-icon ios="ios-call" md="md-call"></ion-icon>
+      </ion-label>
+      <ion-input type="tel" placeholder="Phone"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label>
+        <ion-icon name="ios-clipboard-outline"></ion-icon>
+      </ion-label>
+      <ion-input type="text" placeholder="Notes"></ion-input>
+    </ion-item>
+
+    <button ion-button clear>MORE</button>
+
+    <div>
+      <button ion-button float-right>Save</button>
+      <button ion-button clear float-right (click)="cancelAddContact()">CANCEL</button>
+    </div>
   </div>
 
 </ion-content>

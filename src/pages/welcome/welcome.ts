@@ -30,4 +30,8 @@ export class WelcomePage {
     this.slides.slideNext();
     this.slides.lockSwipes(true);
   }
+
+  skip(){
+    this.navCtrl.setRoot('ContactsPage');
+  }
 }

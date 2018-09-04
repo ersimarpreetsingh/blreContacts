@@ -22,4 +22,8 @@ export class AddNewContactPage {
     console.log('ionViewDidLoad AddNewContactPage');
   }
 
+  cancelAddContact(){
+    this.navCtrl.pop();
+  }
+
 }
