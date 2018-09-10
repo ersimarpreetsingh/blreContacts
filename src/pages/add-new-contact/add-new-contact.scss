@@ -1,3 +1,62 @@
 page-add-new-contact {
+    .header{
+        &.header-md{
+              .back-button{
+                .button-inner{
+                  .back-button-icon{
+                   &.back-button-icon-md{
+                    color: #4685ee;
+                   }
+                  } 
+            }
+          }
+          .bar-buttons{
+            .active{
+             &.disable-hover{
+               color: #f1c40f;
+               }
+            }
+          }
+           &::after{
+             background:transparent;
+           }
+       }
+   }
+   .scroll-content{
+      
+    div{
+        p{
+            margin:0px; 
+        }
+    }
+    .new-contact{
+        padding:32px 16px 0px 16px;
+        .input-item{
+            padding: 0px;
+            .item-inner{
+                padding: 0px;
+                border: none;
 
+                .input-wrapper{
+                    .label{
+                        width: 21px;
+                    }
+                    .input{
+                     border-bottom:1px solid #dedede;
+                     color: #696969;
+                     margin: 0px !important;
+                     input{
+                        margin: 13px 8px !important; 
+                    }
+                    }
+                }
+            }
+        }
+        button{
+            &.more-info{
+                margin-left:15px;
+            }
+        }
+    }
+   }
 }

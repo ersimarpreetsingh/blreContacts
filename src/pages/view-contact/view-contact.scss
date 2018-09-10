@@ -15,4 +15,59 @@ page-view-contact {
           }
         }
       }
+      .header{
+       &.header-md{
+             .back-button{
+               .button-inner{
+                 .back-button-icon{
+                  &.back-button-icon-md{
+                   color: #4685ee;
+                  }
+                 } 
+           }
+         }
+         .bar-buttons{
+           .active{
+            &.disable-hover{
+              color: #f1c40f;
+              }
+           }
+         }
+          &::after{
+            background:transparent;
+          }
+      }
+  }
+  .grid{
+    border-bottom: 5px solid #f6f6f6;
+    .row{
+      align-items: center;
+    }
+  }
+  .item{
+    &.item-block{
+      padding: 0px;
+      .item-inner{
+        padding: 0px 16px;  
+        .input-wrapper{
+          .label{
+            &.label-md{
+              margin: 0px;
+              span{
+                font-size: 16px;
+                color: #4a4a4a;
+                a{
+                  color: #5d91ca;
+                }
+              }
+              .icon{
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
