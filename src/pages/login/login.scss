@@ -24,6 +24,9 @@ page-login {
         padding: 0px;
         color: #fff;
         font: 300 18px Open sans;
+        .label.label-md, .label.label-ios{
+          color: #fff;
+        }
         .input.input-md,
         .input.input-ios {
           color: #fff;

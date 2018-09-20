@@ -67,15 +67,15 @@
 
     
   </ion-slides>
-  <span class="floatNxt">
-      <button ion-button icon-end (click)="nextSlide()">
+  <span class="floatNxt" *ngIf="slides.getActiveIndex() < 4">
+      <button ion-button icon-end (click)="nextSlide()" clear>
         Next
         <ion-icon name="ios-arrow-forward-outline"></ion-icon>
       </button>
     </span>
 
     <span class="floatSkp">
-      <button ion-button (click)="skip()">
+      <button ion-button (click)="skip()" clear>
         Skip
       </button>
     </span>

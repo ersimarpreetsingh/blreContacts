@@ -15,7 +15,7 @@ import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 })
 export class WelcomePage {
   @ViewChild(Slides) slides: Slides;
-
+  public slideLength: number;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     
   }

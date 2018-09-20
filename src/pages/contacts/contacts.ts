@@ -15,7 +15,8 @@ import * as faker from 'faker';
 })
 export class ContactsPage {
   public userArray:any = [];
-  public prevValue:any = null
+  public prevValue:any = null;
+  public searchbarActivated: boolean = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.userArray= [];
@@ -65,5 +66,8 @@ export class ContactsPage {
 
   contactDetailsPage(contact){
     this.navCtrl.push('ViewContactPage', contact);
+  }
+  toggleSearchbar(){
+    this.searchbarActivated = !this.searchbarActivated;
   }
 }

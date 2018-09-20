@@ -1,18 +1,21 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title class="head-title" text-left>Your Contacts</ion-title>
-    <ion-buttons end>
-        <button ion-button icon-only>
-          <ion-icon name="ios-star"></ion-icon>
-        </button>
-        <button ion-button icon-only>
-          <ion-icon name="search"></ion-icon>
-        </button>
-    </ion-buttons>
-  </ion-navbar>
+  <ion-navbar *ngIf="!searchbarActivated" >
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title class="head-title" text-left>Your Contacts</ion-title>
+      <ion-buttons end>
+          <button ion-button icon-only>
+            <ion-icon name="ios-star"></ion-icon>
+          </button>
+          <button ion-button icon-only (click)="toggleSearchbar()">
+            <ion-icon name="search"></ion-icon>
+          </button>
+      </ion-buttons>
+    </ion-navbar>
+    <div *ngIf="searchbarActivated" class="row">
+      <ion-searchbar (ionBlur)="searchbarActivated=false;"></ion-searchbar>
+    </div>
 </ion-header>
 
 <ion-content [ngClass]="{'after-arrow' : userArray?.length == 0}">
@@ -27,11 +30,11 @@
   </div>
 </div>
   <ion-fab bottom right>
-    <button ion-fab (click)="importContacts()">
+    <button ion-fab (click)="(!searchbarActivated)?importContacts():searchbarActivated=false;">
       <ion-icon ios="ios-add" md="md-add"></ion-icon>
     </button>
   </ion-fab>
-  <ion-row *ngFor="let i of userArray" class="item-height" (click)="contactDetailsPage(i)">
+  <ion-row *ngFor="let i of userArray" class="item-height" (click)="(!searchbarActivated)?contactDetailsPage(i):searchbarActivated=false;">
       <ion-col col-2>
           <span class="numberCircle">{{getValue(i.firstName)}}</span>
       </ion-col>
