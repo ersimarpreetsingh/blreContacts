@@ -13,9 +13,11 @@
           </button>
       </ion-buttons>
     </ion-navbar>
-    <div *ngIf="searchbarActivated" class="row">
-      <ion-searchbar (ionBlur)="searchbarActivated=false;"></ion-searchbar>
-    </div>
+    <ion-navbar *ngIf="searchbarActivated">
+      <div class="row">
+          <ion-searchbar (ionBlur)="searchbarActivated=false;"></ion-searchbar>
+      </div>
+    </ion-navbar>
 </ion-header>
 
 <ion-content [ngClass]="{'after-arrow' : userArray?.length == 0}">
