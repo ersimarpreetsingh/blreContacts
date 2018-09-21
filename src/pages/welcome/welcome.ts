@@ -22,13 +22,13 @@ export class WelcomePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
-    this.slides.lockSwipes(true);
+    //this.slides.lockSwipes(true);
   }
 
   nextSlide(){
-    this.slides.lockSwipes(false);
+    //this.slides.lockSwipes(false);
     this.slides.slideNext();
-    this.slides.lockSwipes(true);
+    //this.slides.lockSwipes(true);
   }
 
   skip(){
