@@ -33,7 +33,7 @@
 </div>
   <ion-fab bottom right>
     <button ion-fab (click)="(!searchbarActivated)?importContacts():searchbarActivated=false;">
-      <ion-icon ios="ios-add" md="md-add"></ion-icon>
+      <ion-icon class="add-contacts" ios="ios-add" md="md-add"></ion-icon>
     </button>
   </ion-fab>
   <ion-row *ngFor="let i of userArray" class="item-height" (click)="(!searchbarActivated)?contactDetailsPage(i):searchbarActivated=false;">

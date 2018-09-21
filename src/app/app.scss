@@ -34,7 +34,11 @@
 }
 
 .head-title {
-  font: 18px Open-Sans;
+  font: 18px Open-Sans!important;
+}
+
+.toolbar-title{
+  font: 18px Open-Sans!important;
 }
 
 @mixin header-style {
