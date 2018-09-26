@@ -31,6 +31,12 @@ page-login {
         .input.input-ios {
           color: #fff;
         }
+        &.item-block{
+          .item-inner {
+            padding-right: 8px;
+            border-bottom: 1px solid #dedede;
+          }
+        }
       }
       .submit.item,
       .submit.item-md,
@@ -42,6 +48,11 @@ page-login {
           height: 38px;
           width: 110px;
           font: 14px Open Sans;
+        }
+        &.item-block{
+          .item-inner {
+            border-bottom: none;
+          }
         }
       }
     }
