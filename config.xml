@@ -82,10 +82,6 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-<<<<<<< HEAD
     <engine name="ios" spec="4.5.5" />
     <engine name="android" spec="7.0.0" />
-=======
-    <engine name="ios" spec="~4.5.5" />
->>>>>>> 0ad3e9441ac6b110acb5da31b4893887a4d04df9
 </widget>
