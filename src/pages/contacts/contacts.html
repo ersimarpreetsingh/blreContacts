@@ -5,9 +5,9 @@
       </button>
       <ion-title class="head-title" text-left>Your Contacts</ion-title>
       <ion-buttons end>
-          <button ion-button icon-only>
+          <!-- <button ion-button icon-only>
             <ion-icon name="ios-star"></ion-icon>
-          </button>
+          </button> -->
           <button ion-button icon-only (click)="toggleSearchbar()">
             <ion-icon name="search"></ion-icon>
           </button>
@@ -33,7 +33,7 @@
 </div>
   <ion-fab bottom right>
     <button ion-fab (click)="(!searchbarActivated)?importContacts():searchbarActivated=false;">
-      <ion-icon ios="ios-add" md="md-add"></ion-icon>
+      <ion-icon class="add-contacts" ios="ios-add" md="md-add"></ion-icon>
     </button>
   </ion-fab>
   <ion-row *ngFor="let i of userArray" class="item-height" (click)="(!searchbarActivated)?contactDetailsPage(i):searchbarActivated=false;">

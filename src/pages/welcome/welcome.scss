@@ -1,7 +1,18 @@
 page-welcome {
+  div.swiper-pagination {
+    @media screen and (max-width: 320px) {
+      bottom:15%!important;
+    }
+    bottom:20%!important;
+    top:inherit;
+ }
   ion-content {
     background: linear-gradient(to bottom, #76baf8 10%, #4485f2 65%);
     ion-slides {
+      // .swiper-container{
+      //   height: 75%;
+      //   padding-bottom: 50px;
+      // }
       ion-slide {
         .welcome {
           h3 {
@@ -20,7 +31,7 @@ page-welcome {
           box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5), inset 0 2px 4px 0 rgba(0, 0, 0, 0.5), inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
         }
         .quick-tour {
-          margin-top: 140px;
+          margin-top: 120px;
           h4 {
             color: #fff;
             font: 300 20px/1.5 Open Sans;
